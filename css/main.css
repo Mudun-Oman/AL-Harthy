@@ -21,8 +21,10 @@ Table Of Contents:
 /*     General Styles     */
 /**************************/
 :root {
-	--primary: #1c262f;
+	--primary: #079b6f;
+	--primary-data: #048860;
 	--primary-light: #212d37;
+	--primary-white: #34f5ab;
 	--secondary: #0ee951;
 	--tertiary: #00dabf;
 	--gradient: linear-gradient(to right, #0ee951, #00dabf);
@@ -53,6 +55,7 @@ h4 {
 	padding: 0;
 }
 
+
 a {
 	color: white;
 	text-decoration: none;
@@ -66,37 +69,62 @@ li {
 .home,
 .about,
 .services,
-.plans,
-.contact {
+.plans
+ {
 	height: 110vh;
 	position: relative;
 }
 
 .services,
-.contact,
 .testimonial,
 .footer {
-  	background-color: var(--primary);
+  	background-color: var(--primary-data);
+}
+
+.contact{
+	background : url(../images/home-background.jpg);
+	height: 90vh;
+	position: relative;
+	
 }
 
 .work{
 
-	background: url(../images/home3.jpg);
+	background-color: var(--primary-data);
 	height: 100vh;
 	position: relative;
 	width :auto
 }
 
+.mudunit{
+
+	background: url(../images/pexels-castorly-stock-4065705.jpg);
+	height: 100vh;
+	position: relative;
+	width :auto
+}
+.itservice{
+	height: 110vh;
+	position: relative;
+	background-color: var(--primary);
+}
+
+
 .about,
 .plans,
 .company,
-.newsletter,
-.location {
-  	background-color: var(--primary-light);
+.newsletter
+ {
+  	background-color: var(--primary-data);
 }
 
+.location {
+	background: url(../images/location.jpg)
+}
+
+
 .bottom {
-  	background-color: black;
+  	background-color:#079b6f;
 }
 
 /* Gradient Border And Background On Icons */
@@ -105,6 +133,10 @@ li {
 .plans .far,
 .information .fas,
 .work .fas,
+.mudunit.fas
+.mudunit.far
+.itservice.far,
+.itservice.fas,
 .services .fas,
 .location .far,
 .location .fas {
@@ -139,7 +171,7 @@ li {
 	font-weight: 500;
 	font-size: 0.875rem;
 	line-height: 0.875rem;
-	background-color: var(--primary);
+	background-color: var(--primary-data);
 	box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.025);
 }
 
@@ -189,7 +221,7 @@ li {
 	border: none;
 	margin-top: 0.25rem;
 	margin-bottom: 0.25rem;
-	background-color: var(--primary);
+	background-color: var(--primary-data);
 }
 
 .navbar .dropdown-item {
@@ -302,7 +334,7 @@ li {
 /*     Button     */
 /******************/
 .btn {
-	color: white;
+	color: rgb(39, 36, 36);
 	border-radius: 0;
 	border-width: 2px;
 	padding: 10px 30px;
@@ -555,7 +587,7 @@ li {
 .ex-header {
 	padding-top: 8.5rem;
 	padding-bottom: 4rem;
-	background-color: var(--primary);
+	background-color: var(--primary-data);
 }
 
 .ex-header h1 {
